@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name IS903)(type Legacy)(uri ${KIPRJMOD}/IS903.lib)(options "")(descr ""))
+  (lib (name IS903-rescue)(type Legacy)(uri ${KIPRJMOD}/IS903-rescue.lib)(options "")(descr ""))
+)
