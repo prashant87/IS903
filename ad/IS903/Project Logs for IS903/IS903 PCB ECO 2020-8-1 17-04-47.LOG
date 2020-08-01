@@ -1,0 +1,13 @@
+Added Component: Designator=USB1(USB3.0-G)
+Added Pin To Net: NetName=F1_IO5 Pin=U3-64
+Added Pin To Net: NetName=USB5V Pin=USB1-1
+Added Pin To Net: NetName=DM Pin=USB1-2
+Added Pin To Net: NetName=DP Pin=USB1-3
+Added Pin To Net: NetName=GND Pin=USB1-4
+Added Pin To Net: NetName=NetC5_1 Pin=USB1-5
+Added Pin To Net: NetName=NetC4_1 Pin=USB1-6
+Added Pin To Net: NetName=GND Pin=USB1-7
+Added Pin To Net: NetName=SSRXM Pin=USB1-8
+Added Pin To Net: NetName=SSRXP Pin=USB1-9
+Added Class: Name=IS903
+Added Room: Name=IS903

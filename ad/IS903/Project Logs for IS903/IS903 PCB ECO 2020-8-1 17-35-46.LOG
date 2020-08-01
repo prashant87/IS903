@@ -1,0 +1,4 @@
+Change Component Footprint: Designator=U3 Old Footprint=QFN50P900X900X90-65N-D New Footprint=QFN68 8x8_L
+Added Pin To Net: NetName=GND Pin=U3-64
+Added Class: Name=IS903
+Added Room: Name=IS903

@@ -1,0 +1,3 @@
+Change Component Footprint: Designator=L1 Old Footprint=NR2520 New Footprint=RESC1608X55N
+Added Pin To Net: NetName=F1_IO5 Pin=U3-64
+Added Room: Name=IS903

@@ -1,0 +1,4 @@
+Change Component Footprint: Designator=USB1 Old Footprint=USB3.0-G New Footprint=USB3.0 TYPE A SMD
+Added Pin To Net: NetName=F1_IO5 Pin=U3-64
+Added Pin To Net: NetName=GND Pin=USB1-10
+Added Pin To Net: NetName=GND Pin=USB1-11
