@@ -1,0 +1,15 @@
+Removed Pin From Net: NetName=GND Pin=U3-64
+Added Component: Designator=USB1(USB3.0-G)
+Added Pin To Net: NetName=USB5V Pin=USB1-1
+Added Pin To Net: NetName=DM Pin=USB1-2
+Added Pin To Net: NetName=DP Pin=USB1-3
+Added Pin To Net: NetName=GND Pin=USB1-4
+Added Pin To Net: NetName=NetC5_1 Pin=USB1-5
+Added Pin To Net: NetName=NetC4_1 Pin=USB1-6
+Added Pin To Net: NetName=GND Pin=USB1-7
+Added Pin To Net: NetName=SSRXM Pin=USB1-8
+Added Pin To Net: NetName=SSRXP Pin=USB1-9
+Added Pin To Net: NetName=GND Pin=USB1-10
+Added Pin To Net: NetName=GND Pin=USB1-11
+Added Member To Class: ClassName=IS903 Member=Component USB1 USB 3.0 TYPE A
+Added Room: Name=IS903

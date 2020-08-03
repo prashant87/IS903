@@ -1,0 +1,2 @@
+Change Component Footprint: Designator=U4 Old Footprint=SON50P200X200X80-7N-D New Footprint=TDFN6
+Added Pin To Net: NetName=F1_IO5 Pin=U3-64

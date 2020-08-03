@@ -89,7 +89,7 @@ GenerateClassCluster=0
 DocumentUniqueId=PHHELTSS
 
 [Document4]
-DocumentPath=IS903.PcbDoc
+DocumentPath=IS903_PCB.PcbDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
