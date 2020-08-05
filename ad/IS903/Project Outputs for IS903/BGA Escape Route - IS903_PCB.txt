@@ -1,0 +1,25 @@
+BGA Escape Route
+Filename     : C:\Users\Geekchun\Desktop\IS903\ad\IS903\IS903_PCB.PcbDoc
+Date         : 2020/8/5
+Time         : 12:01:48
+Time Elapsed : 00:00:00
+
+U2
+    Pad U2-N9(1041.72mil,196.58mil) on Bottom Layer on Net GND
+    Pad U2-E5(726.76mil,354.06mil) on Bottom Layer on Net GND
+    Pad U2-M4(1002.35mil,393.43mil) on Bottom Layer on Net F1_IO6
+    Pad U2-F10(766.13mil,157.21mil) on Bottom Layer on Net F0_IO6
+    Pad U2-L4(962.98mil,393.43mil) on Bottom Layer on Net 3.3V
+    Pad U2-L10(962.98mil,157.21mil) on Bottom Layer on Net 3.3V
+    Pad U2-G4(805.5mil,393.43mil) on Bottom Layer on Net 3.3V
+    Pad U2-J10(884.24mil,157.21mil) on Bottom Layer on Net 3.3V
+    Pad U2-L9(962.98mil,196.58mil) on Bottom Layer on Net F1_ALE
+    Pad U2-G5(805.5mil,354.06mil) on Bottom Layer on Net F0_ALE
+    Pad U2-K5(923.61mil,354.06mil) on Bottom Layer on Net F1_CE2n
+    Pad U2-K9(923.61mil,196.58mil) on Bottom Layer on Net F_WPn
+    Pad U2-G6(805.5mil,314.69mil) on Bottom Layer on Net F0_CLE
+    Pad U2-J5(884.24mil,354.06mil) on Bottom Layer on Net F_R/Bn
+    Pad U2-H8(844.87mil,235.95mil) on Bottom Layer on Net F0_CE3n
+    Pad U2-J6(884.24mil,314.69mil) on Bottom Layer on Net F_R/Bn
+    Pad U2-J8(884.24mil,235.95mil) on Bottom Layer on Net F_R/Bn
+count : 17

@@ -1,0 +1,254 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<style type="text/css">
+		h1, h2, h3, h4, h5, h6 { 
+			font-family : segoe ui;
+			color : black;
+			background-color : #EDE7D9;
+			padding: 0.3em;
+		}
+
+		h1 {
+			font-size: 1.2em;
+		}		
+
+		h2 {
+			font-size: 1.2em;
+		}
+
+		body { 
+			font-family : segoe ui;
+		}
+
+		td, th {  
+			padding: 0.5em;
+			text-align : left;
+		}
+		th { 
+			background-color : #EEEEEE;
+		
+		}
+		th.column1, td.column1 { 
+			width : 50%; 
+		}
+
+        th.column2, td.column2 {
+            width : 25%;
+        }
+
+		table { 
+			width : 100%; 
+            font-size: 0.9em;
+		}
+		.front_matter, .front_matter_column1, .front_matter_column2, .front_matter_column3
+		{
+			left : 0;
+			top : 0;
+			padding: 0em;
+			padding-top : 0.1em;
+			border : 0px solid black;
+			width : 100%;
+			vertical-align: top;
+			text-align: left;
+		}
+
+		.front_matter_column1 {
+			width : 5em;
+			font-weight: bold;
+		}
+
+		.front_matter_column2 {
+			width: 0.1em;
+		}
+
+		.front_matter_column3 {
+			width : auto;
+		}
+
+		.total_column1, .total_column {
+			font-weight : bold;
+		}
+		.total_column1 {
+			text-align : left;
+		}
+		.warning, .error { 
+			color : red;
+			font-weight : bold;
+		}	
+		tr.onmouseout_odd { 
+			background-color : #white;
+		}
+		tr.onmouseout_even { 
+			background-color : #FAFAFA;
+		}
+		tr.onmouseover_odd, tr.onmouseover_even { 
+			background-color : #EEEEEE;
+		} 
+		a:link, a:visited, .q a:link,.q a:active,.q {
+			color: #21489e; 
+		}
+		a:link.callback, a:visited.callback { 
+			color: #21489e;
+		}
+		a:link.customize, a:visited.customize {
+			color: #C0C0C0;
+			position: absolute; 
+			right: 10px;
+		}	
+		p.contents_level1 {
+			font-weight : bold;
+			font-size : 110%;
+			margin : 0.5em;
+		}
+		p.contents_level2 {
+			position : relative;
+			left : 20px;
+			margin : 0.5em;
+		}
+	</style><script type="text/javascript">
+		function coordToMils(coord) {
+			var number = coord / 10000;
+			
+			if (number != number.toFixed(3))
+				number = number.toFixed(3);
+			
+			return number + 'mil'
+		}
+
+		function coordToMM(coord) {
+			var number = 0.0254 * coord / 10000;
+			
+			if (number != number.toFixed(4))
+				number = number.toFixed(4);
+			
+			return number + 'mm'
+		}
+	
+		function convertCoord(coordNode, units) {
+			for (var i = 0; i < coordNode.childNodes.length; i++) {
+				coordNode.removeChild(coordNode.childNodes[i]);		
+			}
+
+			var coord = coordNode.getAttribute('value');
+			if (coord != null) {
+				if (units == 'mm') {	
+					textNode = document.createTextNode(coordToMM(coord));
+					coordNode.appendChild(textNode);
+				} else if (units == 'mil') {
+					textNode = document.createTextNode(coordToMils(coord));		
+					coordNode.appendChild(textNode);	
+				}
+			}
+		}
+	
+		function convertUnits(unitNode, units) {
+			for (var i = 0; i < unitNode.childNodes.length; i++) {
+				unitNode.removeChild(unitNode.childNodes[i]);		
+			}
+		
+			textNode = document.createTextNode(units); 
+			unitNode.appendChild(textNode);
+		}
+	
+		function changeUnits(radio_input, units) {
+			if (radio_input.checked) {
+			
+				var elements = document.getElementsByName('coordinate');
+				if (elements) {
+					for (var i = 0; i < elements.length; i++) {
+						convertCoord(elements[i], units);
+					}
+				}
+	
+				var elements = document.getElementsByName('units');
+				if (elements) {
+					for (var i = 0; i < elements.length; i++) {
+						convertUnits(elements[i], units);
+					}
+				}
+			}
+		}	
+	</script><title>BGA Escape Route</title>
+</head>
+<body onload=""><img ALT="Altium" src="
+			file://C:\Users\Public\Documents\Altium\AD20\Templates\AD_logo.png
+		"><a href="dxpprocess://Client:SetupPreferences?Server=PCB|PageName=Reports" class="customize"><acronym title="dxpprocess://Client:SetupPreferences?Server=PCB|PageName=Reports">customize</acronym></a><h1>BGA Escape Route</h1>
+<table class="front_matter">
+<tr class="front_matter">
+<td class="front_matter_column1">Date:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">2020/8/5</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Time:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">12:01:48</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Elapsed Time:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">00:00:00</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Filename:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3"><a href="file:///C:\Users\Geekchun\Desktop\IS903\ad\IS903\IS903_PCB.PcbDoc" class="file"><acronym title="C:\Users\Geekchun\Desktop\IS903\ad\IS903\IS903_PCB.PcbDoc">C:\Users\Geekchun\Desktop\IS903\ad\IS903\IS903_PCB.PcbDoc</acronym></a></td>
+</tr>
+</table><a name="IDLCBFSB4CGUWTDNCEQJFBQF21VE3SGYSYYUVCN0LCD5EFQHH3POTM"><h2>BGA Component Pads that can't be escape routed</h2></a><a name="IDB5RZDLF1QD1EN0AKCM0BEC5VMK4H52BDUJGIMJMERSPBZ450NQI"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="warning">U2</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Geekchun\Desktop\IS903\ad\IS903\IS903_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3893.566mil|Location2.X=3919.874mil|Location1.Y=3028.427mil|Location2.Y=3054.733mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Geekchun\Desktop\IS903\ad\IS903\IS903_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3893.566mil|Location2.X=3919.874mil|Location1.Y=3028.427mil|Location2.Y=3054.733mil|Absolute=True">Pad U2-N9(1041.72mil,196.58mil) on Bottom Layer</acronym></a> on <a href="dxpprocess://PCB:Zoom?document=C:\Users\Geekchun\Desktop\IS903\ad\IS903\IS903_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2877.032mil|Location2.X=4151.146mil|Location1.Y=2848.255mil|Location2.Y=3392.503mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Geekchun\Desktop\IS903\ad\IS903\IS903_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2877.032mil|Location2.X=4151.146mil|Location1.Y=2848.255mil|Location2.Y=3392.503mil|Absolute=True">Net GND</acronym></a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Geekchun\Desktop\IS903\ad\IS903\IS903_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3578.606mil|Location2.X=3604.914mil|Location1.Y=3185.907mil|Location2.Y=3212.213mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Geekchun\Desktop\IS903\ad\IS903\IS903_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3578.606mil|Location2.X=3604.914mil|Location1.Y=3185.907mil|Location2.Y=3212.213mil|Absolute=True">Pad U2-E5(726.76mil,354.06mil) on Bottom Layer</acronym></a> on <a href="dxpprocess://PCB:Zoom?document=C:\Users\Geekchun\Desktop\IS903\ad\IS903\IS903_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2877.032mil|Location2.X=4151.146mil|Location1.Y=2848.255mil|Location2.Y=3392.503mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Geekchun\Desktop\IS903\ad\IS903\IS903_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2877.032mil|Location2.X=4151.146mil|Location1.Y=2848.255mil|Location2.Y=3392.503mil|Absolute=True">Net GND</acronym></a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Geekchun\Desktop\IS903\ad\IS903\IS903_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3854.197mil|Location2.X=3880.503mil|Location1.Y=3225.276mil|Location2.Y=3251.584mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Geekchun\Desktop\IS903\ad\IS903\IS903_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3854.197mil|Location2.X=3880.503mil|Location1.Y=3225.276mil|Location2.Y=3251.584mil|Absolute=True">Pad U2-M4(1002.35mil,393.43mil) on Bottom Layer</acronym></a> on <a href="dxpprocess://PCB:Zoom?document=C:\Users\Geekchun\Desktop\IS903\ad\IS903\IS903_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3329.852mil|Location2.X=3880.503mil|Location1.Y=3225.276mil|Location2.Y=3392.503mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Geekchun\Desktop\IS903\ad\IS903\IS903_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3329.852mil|Location2.X=3880.503mil|Location1.Y=3225.276mil|Location2.Y=3392.503mil|Absolute=True">Net F1_IO6</acronym></a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Geekchun\Desktop\IS903\ad\IS903\IS903_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3617.977mil|Location2.X=3644.284mil|Location1.Y=2989.057mil|Location2.Y=3015.363mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Geekchun\Desktop\IS903\ad\IS903\IS903_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3617.977mil|Location2.X=3644.284mil|Location1.Y=2989.057mil|Location2.Y=3015.363mil|Absolute=True">Pad U2-F10(766.13mil,157.21mil) on Bottom Layer</acronym></a> on <a href="dxpprocess://PCB:Zoom?document=C:\Users\Geekchun\Desktop\IS903\ad\IS903\IS903_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3139.892mil|Location2.X=3908.412mil|Location1.Y=2848.255mil|Location2.Y=3328.158mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Geekchun\Desktop\IS903\ad\IS903\IS903_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3139.892mil|Location2.X=3908.412mil|Location1.Y=2848.255mil|Location2.Y=3328.158mil|Absolute=True">Net F0_IO6</acronym></a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Geekchun\Desktop\IS903\ad\IS903\IS903_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3814.827mil|Location2.X=3841.133mil|Location1.Y=3225.276mil|Location2.Y=3251.584mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Geekchun\Desktop\IS903\ad\IS903\IS903_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3814.827mil|Location2.X=3841.133mil|Location1.Y=3225.276mil|Location2.Y=3251.584mil|Absolute=True">Pad U2-L4(962.98mil,393.43mil) on Bottom Layer</acronym></a> on <a href="dxpprocess://PCB:Zoom?document=C:\Users\Geekchun\Desktop\IS903\ad\IS903\IS903_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2914.54mil|Location2.X=4152.338mil|Location1.Y=2848.255mil|Location2.Y=3392.503mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Geekchun\Desktop\IS903\ad\IS903\IS903_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2914.54mil|Location2.X=4152.338mil|Location1.Y=2848.255mil|Location2.Y=3392.503mil|Absolute=True">Net 3.3V</acronym></a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Geekchun\Desktop\IS903\ad\IS903\IS903_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3814.827mil|Location2.X=3841.133mil|Location1.Y=2989.057mil|Location2.Y=3015.363mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Geekchun\Desktop\IS903\ad\IS903\IS903_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3814.827mil|Location2.X=3841.133mil|Location1.Y=2989.057mil|Location2.Y=3015.363mil|Absolute=True">Pad U2-L10(962.98mil,157.21mil) on Bottom Layer</acronym></a> on <a href="dxpprocess://PCB:Zoom?document=C:\Users\Geekchun\Desktop\IS903\ad\IS903\IS903_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2914.54mil|Location2.X=4152.338mil|Location1.Y=2848.255mil|Location2.Y=3392.503mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Geekchun\Desktop\IS903\ad\IS903\IS903_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2914.54mil|Location2.X=4152.338mil|Location1.Y=2848.255mil|Location2.Y=3392.503mil|Absolute=True">Net 3.3V</acronym></a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Geekchun\Desktop\IS903\ad\IS903\IS903_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3657.347mil|Location2.X=3683.653mil|Location1.Y=3225.276mil|Location2.Y=3251.584mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Geekchun\Desktop\IS903\ad\IS903\IS903_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3657.347mil|Location2.X=3683.653mil|Location1.Y=3225.276mil|Location2.Y=3251.584mil|Absolute=True">Pad U2-G4(805.5mil,393.43mil) on Bottom Layer</acronym></a> on <a href="dxpprocess://PCB:Zoom?document=C:\Users\Geekchun\Desktop\IS903\ad\IS903\IS903_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2914.54mil|Location2.X=4152.338mil|Location1.Y=2848.255mil|Location2.Y=3392.503mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Geekchun\Desktop\IS903\ad\IS903\IS903_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2914.54mil|Location2.X=4152.338mil|Location1.Y=2848.255mil|Location2.Y=3392.503mil|Absolute=True">Net 3.3V</acronym></a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Geekchun\Desktop\IS903\ad\IS903\IS903_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3736.086mil|Location2.X=3762.394mil|Location1.Y=2989.057mil|Location2.Y=3015.363mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Geekchun\Desktop\IS903\ad\IS903\IS903_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3736.086mil|Location2.X=3762.394mil|Location1.Y=2989.057mil|Location2.Y=3015.363mil|Absolute=True">Pad U2-J10(884.24mil,157.21mil) on Bottom Layer</acronym></a> on <a href="dxpprocess://PCB:Zoom?document=C:\Users\Geekchun\Desktop\IS903\ad\IS903\IS903_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2914.54mil|Location2.X=4152.338mil|Location1.Y=2848.255mil|Location2.Y=3392.503mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Geekchun\Desktop\IS903\ad\IS903\IS903_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2914.54mil|Location2.X=4152.338mil|Location1.Y=2848.255mil|Location2.Y=3392.503mil|Absolute=True">Net 3.3V</acronym></a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Geekchun\Desktop\IS903\ad\IS903\IS903_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3814.827mil|Location2.X=3841.133mil|Location1.Y=3028.427mil|Location2.Y=3054.733mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Geekchun\Desktop\IS903\ad\IS903\IS903_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3814.827mil|Location2.X=3841.133mil|Location1.Y=3028.427mil|Location2.Y=3054.733mil|Absolute=True">Pad U2-L9(962.98mil,196.58mil) on Bottom Layer</acronym></a> on <a href="dxpprocess://PCB:Zoom?document=C:\Users\Geekchun\Desktop\IS903\ad\IS903\IS903_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3286.545mil|Location2.X=3841.133mil|Location1.Y=2848.255mil|Location2.Y=3054.794mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Geekchun\Desktop\IS903\ad\IS903\IS903_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3286.545mil|Location2.X=3841.133mil|Location1.Y=2848.255mil|Location2.Y=3054.794mil|Absolute=True">Net F1_ALE</acronym></a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Geekchun\Desktop\IS903\ad\IS903\IS903_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3657.347mil|Location2.X=3683.653mil|Location1.Y=3185.907mil|Location2.Y=3212.213mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Geekchun\Desktop\IS903\ad\IS903\IS903_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3657.347mil|Location2.X=3683.653mil|Location1.Y=3185.907mil|Location2.Y=3212.213mil|Absolute=True">Pad U2-G5(805.5mil,354.06mil) on Bottom Layer</acronym></a> on <a href="dxpprocess://PCB:Zoom?document=C:\Users\Geekchun\Desktop\IS903\ad\IS903\IS903_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3329.852mil|Location2.X=3860.464mil|Location1.Y=3034.466mil|Location2.Y=3392.503mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Geekchun\Desktop\IS903\ad\IS903\IS903_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3329.852mil|Location2.X=3860.464mil|Location1.Y=3034.466mil|Location2.Y=3392.503mil|Absolute=True">Net F0_ALE</acronym></a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Geekchun\Desktop\IS903\ad\IS903\IS903_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3775.456mil|Location2.X=3801.764mil|Location1.Y=3185.907mil|Location2.Y=3212.213mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Geekchun\Desktop\IS903\ad\IS903\IS903_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3775.456mil|Location2.X=3801.764mil|Location1.Y=3185.907mil|Location2.Y=3212.213mil|Absolute=True">Pad U2-K5(923.61mil,354.06mil) on Bottom Layer</acronym></a> on <a href="dxpprocess://PCB:Zoom?document=C:\Users\Geekchun\Desktop\IS903\ad\IS903\IS903_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3069.502mil|Location2.X=4151.739mil|Location1.Y=2877.462mil|Location2.Y=3305.988mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Geekchun\Desktop\IS903\ad\IS903\IS903_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3069.502mil|Location2.X=4151.739mil|Location1.Y=2877.462mil|Location2.Y=3305.988mil|Absolute=True">Net F1_CE2n</acronym></a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Geekchun\Desktop\IS903\ad\IS903\IS903_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3775.456mil|Location2.X=3801.764mil|Location1.Y=3028.427mil|Location2.Y=3054.733mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Geekchun\Desktop\IS903\ad\IS903\IS903_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3775.456mil|Location2.X=3801.764mil|Location1.Y=3028.427mil|Location2.Y=3054.733mil|Absolute=True">Pad U2-K9(923.61mil,196.58mil) on Bottom Layer</acronym></a> on <a href="dxpprocess://PCB:Zoom?document=C:\Users\Geekchun\Desktop\IS903\ad\IS903\IS903_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3270.797mil|Location2.X=3829.672mil|Location1.Y=2848.255mil|Location2.Y=3392.503mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Geekchun\Desktop\IS903\ad\IS903\IS903_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3270.797mil|Location2.X=3829.672mil|Location1.Y=2848.255mil|Location2.Y=3392.503mil|Absolute=True">Net F_WPn</acronym></a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Geekchun\Desktop\IS903\ad\IS903\IS903_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3657.347mil|Location2.X=3683.653mil|Location1.Y=3146.537mil|Location2.Y=3172.843mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Geekchun\Desktop\IS903\ad\IS903\IS903_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3657.347mil|Location2.X=3683.653mil|Location1.Y=3146.537mil|Location2.Y=3172.843mil|Absolute=True">Pad U2-G6(805.5mil,314.69mil) on Bottom Layer</acronym></a> on <a href="dxpprocess://PCB:Zoom?document=C:\Users\Geekchun\Desktop\IS903\ad\IS903\IS903_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3329.852mil|Location2.X=4100.043mil|Location1.Y=3055.135mil|Location2.Y=3192.294mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Geekchun\Desktop\IS903\ad\IS903\IS903_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3329.852mil|Location2.X=4100.043mil|Location1.Y=3055.135mil|Location2.Y=3192.294mil|Absolute=True">Net F0_CLE</acronym></a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Geekchun\Desktop\IS903\ad\IS903\IS903_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3736.086mil|Location2.X=3762.394mil|Location1.Y=3185.907mil|Location2.Y=3212.213mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Geekchun\Desktop\IS903\ad\IS903\IS903_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3736.086mil|Location2.X=3762.394mil|Location1.Y=3185.907mil|Location2.Y=3212.213mil|Absolute=True">Pad U2-J5(884.24mil,354.06mil) on Bottom Layer</acronym></a> on <a href="dxpprocess://PCB:Zoom?document=C:\Users\Geekchun\Desktop\IS903\ad\IS903\IS903_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3736.026mil|Location2.X=3790.302mil|Location1.Y=2848.255mil|Location2.Y=3392.503mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Geekchun\Desktop\IS903\ad\IS903\IS903_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3736.026mil|Location2.X=3790.302mil|Location1.Y=2848.255mil|Location2.Y=3392.503mil|Absolute=True">Net F_R/Bn</acronym></a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Geekchun\Desktop\IS903\ad\IS903\IS903_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3696.716mil|Location2.X=3723.023mil|Location1.Y=3067.796mil|Location2.Y=3094.104mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Geekchun\Desktop\IS903\ad\IS903\IS903_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3696.716mil|Location2.X=3723.023mil|Location1.Y=3067.796mil|Location2.Y=3094.104mil|Absolute=True">Pad U2-H8(844.87mil,235.95mil) on Bottom Layer</acronym></a> on <a href="dxpprocess://PCB:Zoom?document=C:\Users\Geekchun\Desktop\IS903\ad\IS903\IS903_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3202.884mil|Location2.X=4151.739mil|Location1.Y=2926.964mil|Location2.Y=3094.104mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Geekchun\Desktop\IS903\ad\IS903\IS903_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3202.884mil|Location2.X=4151.739mil|Location1.Y=2926.964mil|Location2.Y=3094.104mil|Absolute=True">Net F0_CE3n</acronym></a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Geekchun\Desktop\IS903\ad\IS903\IS903_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3736.086mil|Location2.X=3762.394mil|Location1.Y=3146.537mil|Location2.Y=3172.843mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Geekchun\Desktop\IS903\ad\IS903\IS903_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3736.086mil|Location2.X=3762.394mil|Location1.Y=3146.537mil|Location2.Y=3172.843mil|Absolute=True">Pad U2-J6(884.24mil,314.69mil) on Bottom Layer</acronym></a> on <a href="dxpprocess://PCB:Zoom?document=C:\Users\Geekchun\Desktop\IS903\ad\IS903\IS903_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3736.026mil|Location2.X=3790.302mil|Location1.Y=2848.255mil|Location2.Y=3392.503mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Geekchun\Desktop\IS903\ad\IS903\IS903_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3736.026mil|Location2.X=3790.302mil|Location1.Y=2848.255mil|Location2.Y=3392.503mil|Absolute=True">Net F_R/Bn</acronym></a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Geekchun\Desktop\IS903\ad\IS903\IS903_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3736.086mil|Location2.X=3762.394mil|Location1.Y=3067.796mil|Location2.Y=3094.104mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Geekchun\Desktop\IS903\ad\IS903\IS903_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3736.086mil|Location2.X=3762.394mil|Location1.Y=3067.796mil|Location2.Y=3094.104mil|Absolute=True">Pad U2-J8(884.24mil,235.95mil) on Bottom Layer</acronym></a> on <a href="dxpprocess://PCB:Zoom?document=C:\Users\Geekchun\Desktop\IS903\ad\IS903\IS903_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3736.026mil|Location2.X=3790.302mil|Location1.Y=2848.255mil|Location2.Y=3392.503mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Geekchun\Desktop\IS903\ad\IS903\IS903_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3736.026mil|Location2.X=3790.302mil|Location1.Y=2848.255mil|Location2.Y=3392.503mil|Absolute=True">Net F_R/Bn</acronym></a></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br></body>
+</html>
