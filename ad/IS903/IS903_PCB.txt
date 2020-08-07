@@ -1,12 +1,12 @@
 Board Information Report
 Filename     : C:\Users\Geekchun\Desktop\IS903\ad\IS903\IS903_PCB.PcbDoc
-Date         : 2020/8/6
-Time         : 19:28:19
+Date         : 2020/8/7
+Time         : 12:22:39
 Time Elapsed : 00:00:00
 
 Routing Information
-    Routing completion, 97.18%
+    Routing completion, 100.00%
     Connections, 213
-    Connections routed, 207
-    Connections remaining, 6
+    Connections routed, 213
+    Connections remaining, 0
 count : 4
