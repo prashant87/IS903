@@ -1,0 +1,75 @@
+; ISMPUSBFilter.inf
+;
+; Installation inf for the Lower Filter driver [ DDK Sample ]
+;
+; Copyright (c) Innostor Technology Corporation
+;
+
+[Version]
+Signature = "$Windows NT$"
+Class     = USB
+ClassGUID = {36FC9E60-C465-11CF-8056-444553540000}
+Provider  = %msft%
+DriverVer = 01/05/2011,1.0000.0000
+CatalogFile.NTx86   = ISMPUSBFilter.cat
+CatalogFile.NTAMD64 = ISMPUSBFilter.cat
+
+
+;
+; General installation section
+;
+
+[DestinationDirs]
+DefaultDestDir = 12
+
+
+[DefaultInstall]
+CopyFiles = Filter.DriverFiles
+Addreg  = Filter.HW.AddReg
+
+[DefaultInstall.services]
+AddService = ISMPUSBFilter,,FilterService
+
+[DefaultUninstall]
+DelFiles = Filter.DriverFiles
+
+[DefaultUninstall.Services]
+DelService = ISMPUSBFilter,0x200      ;Ensure service is stopped before deleting
+
+
+[Filter.HW.AddReg]
+;;HKLM, System\CurrentControlSet\Control\Class\{36FC9E60-C465-11CF-8056-444553540000}, UpperFilters, 0x00010008, ISMPUSBFilter
+HKLM, SYSTEM\CurrentControlSet\Control\Class\{36FC9E60-C465-11CF-8056-444553540000}, LowerFilters, 0x00010008, ISMPUSBFilter
+
+
+[FilterService]
+DisplayName    = %service_desc%
+ServiceType    = 1
+StartType      = 3
+ErrorControl   = 1
+ServiceBinary  = %12%\ISMPUSBFilter.sys
+LoadOrderGroup = "PnP Filter"
+
+
+[Filter.DriverFiles]
+ISMPUSBFilter.sys
+
+[SourceDisksFiles]
+ISMPUSBFilter.sys=1
+
+
+[SourceDisksNames.x86]
+1=%INSTDISK%,,,\x86
+
+[SourceDisksNames.amd64]
+1=%INSTDISK%,,,\x64
+
+
+;------------------------------------------------------------------------------
+;  String Definitions
+;------------------------------------------------------------------------------
+
+[Strings]
+msft="Innostor Technoogy Corp."
+INSTDISK="Innostor Technoogy Corp. Installation Disk #1 (ISMPUSBFilter)"
+service_desc="MP Tool Filters Driver"

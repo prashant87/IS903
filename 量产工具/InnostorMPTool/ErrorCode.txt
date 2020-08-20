@@ -1,0 +1,600 @@
+     11:             "Open Execute File error!";                            
+     12:             "Can't support NAND Function!";                        
+     13:             "Send Execute CMD fail!";                          
+     14:             "Check busy after Send Execute CMD!";              
+     15:             "Can't support NFTL Function!";                        
+     16:             "Device Setup already, please erase first!";           
+     17:             "Can't support LED Function!";                     
+     18:             "Check busy after Execute step!";                  
+     19:             "Send GetMap CMD fail!";                               
+     20:             "Return Channel not match!";                           
+     21:             "Return Bank not match!";                          
+     22:             "Return SizeofIDCode not match!";                  
+     23:             "Return Flash ID not match!";                      
+     24:             "Check busy after TestGetMap Step!";                   
+     25:             "TestConfig Send IODriving_CMD fail!";             
+     26:             "TestConfig Send SET_ECC_CMD fail!";                   
+     27:             "TestConfig Send SET_ACTiming_CMD fail!";          
+     28:             "TestConfig Send ConfigDevice_CMD fail!";          
+     29:             "TestConfig Send ConfigDevice_CMD fail!";          
+     30:             "Check busy after Send ConfigDevice_CMD!";         
+     31:             "Check busy after Test Config Step!";              
+     32:             "TestScanINIDFT Send CMD fail!";                       
+     33:             "Check busy after TestScanINIDFT Step!";               
+     34:             "TestReadPhysical Send CMD fail!";                 
+     35:             "TestCopy Send Init_NFTL CMD fail!";                   
+     36:             "Check busy after Initial NFTL!";                  
+     37:             "TestCopy Write fail!";                                
+     38:             "TestCopy Read fail!";                             
+     39:             "TestCopy RW Compare fail!";                           
+     40:             "Check busy after TestReadPhysical Step!";         
+     41:             "TestErase Send CMD fail!";                            
+     42:             "Check busy after TestErase!";                     
+     43:             "Open USB FW File error!";                         
+     44:             "Open SATA FW File error!";                            
+     45:             "Send Write FW/Info CMD fail!";                        
+     46:             "Check busy after Send Write FW/Info CMD!";            
+     47:             "Send Read FW/Info CMD fail!";                     
+     48:             "Check busy after RW Info and FW!";                    
+     49:             "Verify Info fail!";                                   
+     50:             "Write Descriptor fail!";                          
+     51:             "Can't support Partition Function!";                   
+     52:             "The Supported System IDs is incomplete!";         
+     53:             "open Image file fail!";                               
+     54:             "Set Partition Fail!";                             
+     55:             "Send Write Partition CMD fail!";                  
+     56:             "Write CD-ROM partition fail!";                        
+     57:             "Send ReadCapacity CMD fail!";                     
+     58:             "Send Init_NFTL CMD fail!";                            
+     59:             "Send Write Partition CMD fail!";                  
+     60:             "Check busy after Partition!";                     
+     61:             "Check busy after Copy Test!";                     
+     62:             "This Format type not support!";                       
+     63:             "This Windows version not support!";                   
+     64:             "Can't get Diskletter!";                               
+     65:             "Write Label name fail!";                          
+     66:             "TestFormat fail!";                                    
+     67:             "Check busy after Format!";                            
+     68:             "TestExecute ReInitial-Erase fail!";                   
+     69:             "Inquiry Fail!";                                       
+     70:             "Can't Initial device , now run FW!";              
+     71:             "Check busy after Re-Initial erase Fail!";         
+     72:             "TestExecute Stop NFTL fail!";                     
+     73:             "Send LEDC CMD fail!";                             
+     74:             "TestFormat verify BPB fail!";                     
+     75:             "Lock Disk fail!";                                 
+     76:             "UnLock Disk fail!";                                   
+     77:             "Get lock handle fail!";                               
+     78:             "Get Total Sectors fail!";                         
+     79:             "Open PC FW File error!";                          
+     80:             "TestReadPhysical bad block over default setting!";    
+     81:             "TestReadPhysical Info-Block is bad!";             
+     82:             "Execute File not found!";                         
+     83:             "TestReadPhysical Total size not enough!";         
+     84:             "TestReadPhysical Get total block too much!";      
+     85:             "TestFormat Create MBR error!";                        
+     86:             "TestFormat Verify MBR fail!";                     
+     87:             "Read Capacity fail!";                             
+     88:             "Enable Optitmize for Performance fail!";          
+     89:             "Relink drive fail!";                              
+     90:             "Disk size small than Media Partition!";               
+     91:             "Disk size small than Force capacity!";                
+     92:             "Can't support TEPF Function!";                        
+     93:             "Refresh device fail!";                                
+     94:             "Send Terminate CMD fail!";                            
+     95:             "Boot code fail!";                         
+     96:             "Innostor unlock CMD fail!";                           
+     97:             "Innostor lock CMD fail!";                         
+     98:             "Get Serial number fail!";                         
+     99:             "Can't find good block to write FW!";              
+     100:            "Can't find good block to write Info!";                
+     101:            "TestConfig CT value error!";                      
+     102:            "Hidden size incorrect!";                          
+     103:            "Preload File Fail!";                              
+     104:            "Can not find default Stor-String!";                   
+     105:            "Allocate system block fail!";                         
+     106:            "Get Parameter fail!";                             
+     107:            "Get Flash vendor fail!";                          
+     108:            "Get Driving setting fail!";                           
+     109:            "Can not Get File system!";                            
+     110:            "Check Innostor device fail!";                     
+     111:            "Check Preload files fail!";                           
+     112:            "Cluster size not match!";                         
+     113:            "Serial number over setting!";                     
+     114:            "Not support ISF!";                                    
+     115:            "Set Permissions fail!";                               
+     116:            "Can not support this version OS!";                    
+     117:            "Not support this controller!";                        
+     118:            "Support ISF Only!";                                   
+     119:            "Bad Block too much!";                             
+     120:            "Serial number length not match!";                 
+     121:            "Set parameter fail!";                                                     
+     122:            "Device size not match!";                          
+     123:            "Check DQS fail!";                                 
+     124:            "Block 0 not free!";                                   
+     125:            "Write Block 0 verify fail!";                      
+     126:            "Verify data all 0xFF!";                               
+     127:            "Full Erase fail!";                                    
+     128:            "Set GBL fail!";                                       
+     129:            "Check capacity fail!";                                
+     130:            "Write GBL table fail!";                               
+     131:            "Flash type not match!";                               
+     132:            "Return normal MP fail!";                          
+     133:            "Block status not match!"; 
+     134:            "Check block status is Late-Fail!";                        
+     135:            "Can't support new version Partition Function!";       
+     136:            "Can't Login Partition!";                          
+     137:            "Can't find IDBT table!";                          
+     138:            "Check block status fail!";                            
+     139:            "Check Info fail!";                                    
+     140:            "Write CMD fail!";                                 
+     141:            "Read CMD fail!";                                  
+     142:            "Over Threshold!";                                 
+     143:            "Busy CMD fail!";                                  
+     144:            "ECC Uncorrectable!";                              
+     145:            "Erase CMD fail!";                                 
+     146:            "Erase Incomplete!";                                   
+     147:            "Block setting over!";                             
+     148:            "Page setting over!";                              
+     149:            "Force check file system fail!";                       
+     150:            "Write GBL table fail!";                               
+     151:            "Used space too much!";                                
+     152:            "Can not support DDR, Plz uncheck Support DDR!";                               
+     153:            "Check U3 fail!";                                  
+     154:            "Table size too big!"
+     155:            "Check IDBTType Rule Failure";
+     156:            "Not found ADATA Table";
+     157:            "BatchErase:Read Block states Failure";
+     158:            "BatchErase Failure";
+     159:            "BatchErase:Waiting Failure";
+     160:            "Not found ADATA_ECC.dll";
+     161:            "Don't Get address form ADATA ECC.dll";
+     162:            "Loadlibrary failure form ADATA ECC.dll";
+     163:            "Get Table Fail";
+     164:            "Set Table Fail";
+     165:            "Enable Config Fail";
+     166:            "Disable Config Fail";
+     167:            "Prepare Scramble Fail";
+     168:            "DEnanble Scramble Fail";
+     169:            "Get Incorrect IDBT";
+     170:            "Check  State Fail";
+     171:            "Set Table Fail";
+     172:            "Bad Block Checking Fail";
+     173:            "SLC Blocks not enough!";
+     174:            "Can't find good block from GBL!";
+     175:            "Get buffer to empty!";
+     176:            "Lost  IS Table!";
+     177:            "Write IS Table fail!";
+     178:            "ReadCommand Fail";
+     179:            "Create GBL Failure Step1";
+     180:            "Create GBL Failure Step2";
+     181:            "Create GBL Failure Step3";
+     182:            "Create GBL Failure Step4";
+     183:            "Create GBL Failure Step5";
+     184:            "Create GBL Failure Step5";
+     185:            "Load AI-Cache dll failure";
+     186:            "Can't Find IS Table!";
+     187:            "Check Program Fail!";
+     188:            "Check Read Data Fail!";
+     189:            "Check Layout Fail!";
+     190:            "Can't Support Sorting!";
+     191:            "Find Out Late Fail Block!";
+     192:            "Capacity is not enough for partition!";
+     193:            "Check NAND Density mismatched!";
+     194:            "FW Block is Lost!";
+     195:            "Enable Setting Fail!";
+     196:            "This Flash not support !";
+     197:            "Routing Fail!";
+     198:            "Connect Device Fail!";
+     199:            "Get Physical Bad Block Fail!";
+     200:            "Check GBL Fail!";
+     201:            "Force size not enough!";
+     202:            "This device not support HW inter leave!"
+     203:            "Erase After MP fail!"
+     204:            "Bad blocks are detected!";                        
+     205:            "This operation is not supported!";                    
+     206:            "Only Support DDR, Plz check Support DDR!"
+     207:            "DDR Training Fail!";
+     208:            "Get DDR Training Result Fail!";
+     209:            "fast logical not supported!"; 
+     210:            "Check U2 U3 not match!";                          
+     211:            "Stop test !";                                 
+
+
+
+     300:            "SORTING_INVALID_HANDLE!";                         
+     301:            "SORTING_SUCCESS!";                                    
+     302:            "SORTING_EVENT_FUNCTION_FAIL!";                        
+     303:            "SORTING_STATUS_FUNCTION_FAIL!";                       
+     304:            "SORTING_SET_PARAMETER_FAIL!";                     
+     305:            "SORTING_GET_PARAMETER_FAIL!";                     
+     306:            "SORTING_SET_PATTERN_FAIL!";                           
+     307:            "SORTING_SET_TABLE_FAIL!";                         
+     308:            "SORTING_ERASE_FAIL!";                             
+     309:            "SORTING_WRITE_FAIL!";                             
+     310:            "SORTING_READ_COMPARE_FAIL!";                      
+     311:            "SORTING_GET_RESULT_FAIL!";                            
+     312:            "SORTING_NOT_TLC_FALSH!";                          
+     313:            "SORTING_FLASH_POWER_ONOFF_FAIL!";                 
+     314:            "SORTING_SET_FEATURE_FAIL!";                           
+     315:            "SORTING_SET_BMT_FAIL!";                               
+     316:            "SORTING_BAD_BLOCKS_TOO_MUCH!";                        
+     317:            "SORTING_NOT_SUPPORT_MULTI_CHANNEL_MULTI_BANK!";       
+     318:            "SORTING_SORTING_DATA_LENGTH_MISMATCH!";               
+     319:            "SORTING_SORTING_SET_ALPHA_TABLE_FAIL!";               
+     320:            "SORTING_VERIFY_IDBT_FAIL!";                           
+     321:            "SORTING_QUICK_PARAMETER_FAIL!";                       
+     322:            "SORTING_SORTING_INVLIAD_SORTING_LEVEL!";          
+     324:            "SORTING_SET_BLOCK_MAPPING_TABLE_FAIL!"; 
+     325:            "SORTING_SET_PAGE_MAPPING_TABLE_FAIL!"; 
+     326:            "SORTING_SCAN_INIT_DEFECT_FAIL!"; 
+     327:            "SORTING_FLASH_FULL_READ_FAIL!"; 
+     328:            "SORTING_FLASH_ERASE_FAIL!"; 
+     329:            "SORTING_FLASH_SET_SPARE_FAIL!"; 
+     330:            "SORTING_FLASH_WRITE_FAIL!"; 
+     331:            "SORTING_FLASH_READ_FAIL!"; 
+     332:            "SORTING_ALLOCATE_BUFFER_FAIL!"; 
+
+     600:            "IS_ERROR_NOT_INNOSTOR_DEVICE!";                        
+     601:            "IS_ERROR_FIRMWARE_PROGRAM_FILE_NOT_FOUND!";            
+     602:            "IS_ERROR_UNKNOWN_FUNCTION_ID!";                        
+     603:            "IS_ERROR_UPDATE_EXECUTE_FILE_NOT_FOUND!";          
+     604:            "IS_ERROR_EXECUTE_FILE_NOT_FOUND!";                     
+     605:            "IS_ERROR_FIRMWARE_FILE_NOT_FOUND!";                    
+     606:            "IS_ERROR_INVALID_PARAMETER!";                      
+     607:            "IS_ERROR_INVALID_CAPACITY!";                       
+     608:            "IS_ERROR_IMAGE_FILE_NOT_FOUND!";                   
+     609:            "IS_ERROR_ALLOCATE_SIZE_OVER!";                         
+     610:            "IS_ERROR_ALLOCATE_SIZE_SMALL_THAN_IMAGE_SIZE!";        
+     611:            "IS_ERROR_PASSWORD_NOT_FOUND!";                         
+     612:            "IS_ERROR_INCORRECT_PASSWORD_LENGTH!";              
+     613:            "IS_ERROR_HINT_NOT_FOUND!";                             
+     614:            "IS_ERROR_INCORRECT_HINT_LENGTH!";                  
+     615:            "IS_ERROR_COMPARE_PASSWORD_FAILED!";                    
+     616:            "IS_ERROR_INVALID_FUNCTION!";                       
+     617:            "IS_ERROR_GET_PARTITION_INFO_FAILED!";              
+     618:            "IS_ERROR_SET_PARTITION_FAILED!";                   
+     619:            "IS_ERROR_UPDATE_IMAGE_FAILED!";                        
+     620:            "IS_ERROR_UPDATE_PARTITION_FAILED!";                    
+     621:            "IS_ERROR_LOCK_FAILED!";                                
+     622:            "IS_ERROR_UNLOCK_FAILED!";                          
+     623:            "IS_ERROR_TEST_PASSWORD_FAILED!";                   
+     624:            "IS_ERROR_CHANGE_PASSWORD_FAILED!";                     
+     625:            "IS_ERROR_GET_DEVICE_INFO_FAILED!";                     
+     626:            "IS_ERROR_SET_DEVICE_INFO_FAILED!";                     
+     627:            "IS_ERROR_UPDATE_OLD_FIRMWARE_NOT_SUPPORTED!";      
+     628:            "IS_ERROR_TOGGLE_WRITE_PROTECT_FAILED!";                
+     629:            "IS_ERROR_INQU_NOT_SUPPORTED!";                         
+     630:            "IS_ERROR_NAND_NOT_SUPPORTED!";                         
+     631:            "IS_ERROR_NFTL_NOT_SUPPORTED!";                         
+     632:            "IS_ERROR_EXEC_NOT_SUPPORTED!";                         
+     633:            "IS_ERROR_PM_NOT_SUPPORTED!";                       
+     634:            "IS_ERROR_LEDC_NOT_SUPPORTED!";                         
+     635:            "IS_ERROR_PINF_NOT_SUPPORTED!";                         
+     636:            "IS_ERROR_TEPF_NOT_SUPPORTED!";                         
+     637:            "IS_ERROR_RAMD_NOT_SUPPORTED!";                         
+     638:            "IS_ERROR_SPTI_NOT_SUPPORTED!";                         
+     639:            "IS_ERROR_APTI_NOT_SUPPORTED!";                         
+     640:            "IS_ERROR_RPTI_NOT_SUPPORTED!";                         
+     641:            "IS_ERROR_SCSI_NOT_SUPPORTED!";                         
+     642:            "IS_ERROR_ATA_NOT_SUPPORTED!";                      
+     643:            "IS_ERROR_RAID_NOT_SUPPORTED!";                         
+     699:            "Preformat set data fail!";                            
+                
+     701:           "IS_ERROR_INQU_INVALID_BUS_SELECTOR";                
+     702:           "IS_ERROR_INQU_INVALID_FUNCTION_SELECTOR";          
+     703:           "IS_ERROR_INQU_INVALID_TIMEOUT_VALUE";              
+     704:           "IS_ERROR_INQU_INVALID_PARAMETER";                  
+     705:           "IS_ERROR_INQU_INQUIRY";                            
+     706:           "IS_ERROR_INQU_DISCONNECT";                         
+     707:           "IS_ERROR_INQU_REATTACH";                           
+     708:           "IS_ERROR_INQU_MODE_SENSE";                         
+     709:           "IS_ERROR_INQU_MODE_SELECT";                            
+     710:           "IS_ERROR_NAND_INVALID_BUS_SELECTOR";                
+     711:           "IS_ERROR_NAND_INVALID_FUNCTION_SELECTOR";           
+     712:           "IS_ERROR_NAND_INVALID_TIMEOUT_VALUE";               
+     713:           "IS_ERROR_NAND_INVALID_PARAMETER";                  
+     714:           "IS_ERROR_NAND_ERASE_BLOCKS";                       
+     715:           "IS_ERROR_NAND_GET_MAP";                                
+     716:           "IS_ERROR_NAND_CONFIGURATE_SSD_INFO";              
+     717:           "IS_ERROR_NAND_CONFIGURATE_DEVICE";                 
+     718:           "IS_ERROR_NAND_CONFIGURATE_PROJECT_INFO";           
+     719:           "IS_ERROR_NAND_READ_PINF";                          
+     720:           "IS_ERROR_NAND_WRITE_PINF";                         
+     721:           "IS_ERROR_NAND_READ_PHYSICAL_BLOCKS_STATUS";        
+     722:           "IS_ERROR_NAND_EXECUTE";                                                
+     723:           "IS_ERROR_NAND_SCAN_INITIAL_DEFECTIVE_BLOCKS";     
+     724:           "IS_ERROR_NAND_CHECK_READY_BUSY";                   
+     725:           "IS_ERROR_NAND_FLASH_READ";                         
+     726:           "IS_ERROR_NAND_FLASH_WRITE";                        
+     727:           "IS_ERROR_NAND_READ_SPARE_DATA";                    
+     728:           "IS_ERROR_NAND_SET_SPARE_DATA";                     
+     729:           "IS_ERROR_NAND_WRITE_SPARE_DATA";                   
+     730:           "IS_ERROR_NAND_READ_PARAMETER_PAGE";                
+     731:           "IS_ERROR_NAND_SET_PINF_BLOCK_ADDRESS";            
+     732:           "IS_ERROR_NAND_SORT_INFO_BLOCK";                    
+     733:           "IS_ERROR_NAND_CONFIGURATE_SCRAMBLE";               
+     734:           "IS_ERROR_NAND_GET_BAD_COLUMN";                     
+     735:           "IS_ERROR_NAND_SET_BAD_COLUMN";                     
+     736:           "IS_ERROR_NAND_ENABLE_BAD_COLUMN";                  
+     737:           "IS_ERROR_NAND_DISABLE_BAD_COLUMN";                 
+     738:           "IS_ERROR_NFTL_INVALID_BUS_SELECTOR";                
+     739:           "IS_ERROR_NFTL_INVALID_FUNCTION_SELECTOR";           
+     740:           "IS_ERROR_NFTL_INVALID_TIMEOUT_VALUE";              
+     741:           "IS_ERROR_NFTL_INVALID_PARAMETER";                  
+     742:           "IS_ERROR_NFTL_GET_INFORMATION";                    
+     743:           "IS_ERROR_NFTL_GET_L2P_MAPPING_TABLE";             
+     744:           "IS_ERROR_NFTL_GET_PHY_BLOCK_STATE_TABLE";          
+     745:           "IS_ERROR_NFTL_START_NFTL";                         
+     746:           "IS_ERROR_NFTL_STOP_NFTL";                      
+     747:           "IS_ERROR_NFTL_GET_VERSION";                        
+     748:           "IS_ERROR_NFTL_GET_ERASE_COUNT";                    
+     749:           "IS_ERROR_PM_INVALID_BUS_SELECTOR";                 
+     750:           "IS_ERROR_PM_INVALID_FUNCTION_SELECTOR";          
+     751:           "IS_ERROR_PM_INVALID_TIMEOUT_VALUE";                    
+     752:           "IS_ERROR_PM_INVALID_PARAMETER";                        
+     753:           "IS_ERROR_PM_INCORRECT_SYSTEM_DESCRIPTOR";          
+     754:           "IS_ERROR_PM_INCORRECT_SYSTEM_DESCRIPTOR_LENGTH";    
+     755:           "IS_ERROR_PM_WRITE_PARTITION";                      
+     756:           "IS_ERROR_PM_WRITE_SYSTEM_DESCRIPTOR";               
+     757:           "IS_ERROR_PM_WRITE_CUSTOMER_APPLICATION_PARTITION";  
+     758:           "IS_ERROR_PM_WRITE_IMAGE_FILE";                 
+     759:           "IS_ERROR_PM_READ_CAPACITY";                        
+     760:           "IS_ERROR_PM_SET_PARTITION";                            
+     761:           "IS_ERROR_PM_READ_PARTITION";                       
+     762:           "IS_ERROR_PM_READ_SYSTEM_DESCRIPTOR";               
+     763:           "IS_ERROR_PM_READ_CUSTOMER_APPLICATION_PARTITION";   
+     764:           "IS_ERROR_PM_SET_KEY";                              
+     765:           "IS_ERROR_PM_GET_SECURITY_PARTITION_STATUS";         
+     766:           "IS_ERROR_PM_START_SECURITY_PARTITION";             
+     767:           "IS_ERROR_PM_STOP_SECURITY_PARTITION";             
+     768:           "IS_ERROR_PM_TOGGLE_WRITE_PROTECT_PARTITION";     
+     769:           "IS_ERROR_PM_GET_SUPPORTED_SYSTEM_IDS";           
+     770:           "IS_ERROR_EXEC_INVALID_BUS_SELECTOR";                
+     771:           "IS_ERROR_EXEC_INVALID_FUNCTION_SELECTOR";         
+     772:           "IS_ERROR_EXEC_INVALID_TIMEOUT_VALUE";             
+     773:           "IS_ERROR_EXEC_INVALID_PARAMETER";                  
+     774:           "IS_ERROR_EXEC_PROGRAM";                            
+     775:           "IS_ERROR_EXEC_DOWNLOAD_PROGRAM_IMAGE";           
+     776:           "IS_ERROR_LEDC_INVALID_BUS_SELECTOR";                
+     777:           "IS_ERROR_LEDC_INVALID_FUNCTION_SELECTOR";         
+     778:           "IS_ERROR_LEDC_INVALID_TIMEOUT_VALUE";              
+     779:           "IS_ERROR_LEDC_INVALID_PARAMETER";              
+     780:           "IS_ERROR_LEDC_CONTROL";                            
+     781:           "IS_ERROR_PINF_INVALID_BUS_SELECTOR";              
+     782:           "IS_ERROR_PINF_INVALID_FUNCTION_SELECTOR";         
+     783:           "IS_ERROR_PINF_INVALID_TIMEOUT_VALUE";          
+     784:           "IS_ERROR_PINF_INVALID_PARAMETER";              
+     785:           "IS_ERROR_PINF_READ_CAPACITY";                  
+     786:           "IS_ERROR_PINF_READ_PINF_BLOCK";                    
+     787:           "IS_ERROR_PINF_WRITE_PINF_BLOCK";                   
+     788:           "IS_ERROR_PINF_ERASE_PINF_BLOCK";                   
+     789:           "IS_ERROR_RAMD_INVALID_BUS_SELECTOR";               
+     790:           "IS_ERROR_RAMD_INVALID_FUNCTION_SELECTOR";         
+     791:           "IS_ERROR_RAMD_INVALID_TIMEOUT_VALUE";             
+     792:           "IS_ERROR_RAMD_INVALID_PARAMETER";                  
+     793:           "IS_ERROR_RAMD_GET_MEMORY";                         
+     794:           "IS_ERROR_RAMD_READ_MEMORY";                            
+     795:           "IS_ERROR_RAMD_WRITE_MEMORY";                       
+     796:           "IS_ERROR_TEPF_INVALID_BUS_SELECTOR";               
+     797:           "IS_ERROR_TEPF_INVALID_FUNCTION_SELECTOR";          
+     798:           "IS_ERROR_TEPF_INVALID_TIMEOUT_VALUE";            
+     799:           "IS_ERROR_TEPF_INVALID_PARAMETER";                  
+     800:           "IS_ERROR_TEPF_EXECUTE_FAILED";                     
+     801:           "IS_ERROR_SPTI_INVALID_PARAMETER";                  
+     802:           "IS_ERROR_SPTI_TEST_UNIT_READY";                    
+     803:           "IS_ERROR_SPTI_INQUIRY";                            
+     804:           "IS_ERROR_SPTI_READ_CAPACITY";                      
+     805:           "IS_ERROR_APTI_INVALID_PARAMETER";                  
+     806:           "IS_ERROR_RPTI_INVALID_PARAMETER";                  
+     807:           "IS_ERROR_SCSI_INVALID_PARAMETER";                  
+     808:           "IS_ERROR_SCSI_READ";                           
+     809:           "IS_ERROR_SCSI_WRITE";                              
+     810:           "IS_ERROR_SCSI_READ_EX";                                
+     811:           "IS_ERROR_SCSI_WRITE_EX";                           
+     812:           "IS_ERROR_ATA_INVALID_PARAMETER";                   
+     813:           "IS_ERROR_ATA_READ";                                    
+     814:           "IS_ERROR_ATA_WRITE";                               
+     815:           "IS_ERROR_ATA_READ_EX";                             
+     816:           "IS_ERROR_ATA_WRITE_EX";                                
+     817:           "IS_ERROR_RAID_INVALID_PARAMETER";                  
+     818:           "IS_ERROR_RAID_READ";                               
+     819:           "IS_ERROR_RAID_WRITE";                              
+     820:           "IS_ERROR_RAID_READ_EX";                                
+     821:           "IS_ERROR_RAID_WRITE_EX";                           
+     822:           "IS_ERROR_PREFORMAT_STATUS_FUNCTION";                
+     823:           "IS_ERROR_PREFORMAT_NOT_DDR_FLASH";                 
+     824:           "IS_ERROR_PREFORMAT_PINF_GROUP_A_PAGES_IS_NOT_ENOUGH";               
+     825:           "IS_ERROR_PREFORMAT_GROUP_A_PAGES_IS_NOT_ENOUGH";    
+     826:           "IS_ERROR_PREFORMAT_ALLOCATE_PINF_FAIL";             
+     827:           "IS_ERROR_PREFORMAT_LINF_VERIFY_FAIL";               
+     828:           "IS_ERROR_PREFORMAT_PINF_VERIFY_FAIL";               
+     829:           "IS_ERROR_PREFORMAT_GET_FW_FILE_FAIL";               
+     830:           "IS_ERROR_PREFORMAT_SET_CAPACITY_FAIL";              
+     831:           "IS_ERROR_PREFORMAT_SET_SN_FAIL";                   
+     832:           "IS_ERROR_PREFORMAT_SN_LENGTH_TOO_LARGE";            
+     833:           "IS_ERROR_PREFORMAT_BOOT_FW_FAIL";                  
+     834:           "IS_ERROR_PREFORMAT_BUILD_FW_LOC_FAIL";              
+     835:           "IS_ERROR_PREFORMAT_GET_PINF_PAGE_FAIL";             
+
+     850:           "Good block link check buffer overflow";             
+
+     900:           "Get Parameter 2 fail!";
+     901:           "Not support GBL !";
+     902:           "Total size not enough!";
+     903:           "Set Hynix cmd fail !";
+
+     1001:          "Check VID fail!";                                  
+     1002:          "Check PID fail!";                                  
+     1003:          "Check Manufact string fail!";                      
+     1004:          "Check Inquiry VID fail!";                          
+     1005:          "Check Product string fail!";                       
+     1006:          "Check Storage device ID fail!";    
+     1007:          "Check Label fail!";
+
+     1008:          "TestFormat erase system area fail!";
+     1009:          "TestFormat read  system area fail!";
+     1010:          "TestFormat compare system area fail!";
+     1011:          "Inquiry Fail!";
+
+     1012:          "Test SLT create path fail!";
+     1013:          "Test SLT Write LBA fail!";
+     1014:          "Test SLT Read LBA fail!";
+     1015:          "Test SLT Compare fail!";
+     
+     1020:          "Inquiry fail!";
+     1021:          "Get block start address fail!";    
+     1022:          "Physical read fail!";
+     1023:          "Not support sorting page base !";
+     1024:          "Get IDBT table fail !";
+     1025:          "Set IDBT table fail !";
+     1026:          "Physical read fail!";
+     1027:          "Get BC table fail ";
+     1028:          "Check IDBT table fail!";
+     1029:          "Test config fail!";
+     1030:          "Check busy fail !";
+     1031:          "SLC physical read fail!";
+     1032:          "SLC decode fail!";
+     1033:          "Not support cross-IDBT!";      
+     1034:          "IDBT is SDR mode / MP DDR mode !";
+     1035:          "IDBT is single plane / MP multi plane !";
+     1036:          "Not enough capacity !"
+
+     1040:          "PM Format Get Parameter fail!";    
+     1041:          "PM Format write fail!";        
+     1042:          "PM Format read  fail!";        
+     1043:          "PM Format verify fail!";   
+     1044:          "PM Not support no serial number";
+
+     1050:          "Good check Get parameter 1 fail!"; 
+     1051:          "Good check Get parameter 2 fail!"; 
+     1052:          "Good check Get parameter 3 fail!"; 
+     1053:          "Good check read fail!";                
+
+     1060:          "Size of set Initial Defective block exceeded"
+
+     //
+     //Boot fw code test error 
+     //
+     2080:          "Boot code re terminate fail !";
+     2081:          "Boot code re execute fail !";  
+     2082:          "Boot code re Inquiry fail !";  
+     2083:          "Boot code re Boot fw fail !";  
+     2084:          "Boot code re test Boot fw fail !"; 
+         
+     //
+     //
+     //
+     3000:          "Open device fail !";
+     3001:          "Inquiry fail !";
+     3002:          "terminate fail !";
+     3003:          "Open execute file fail !";
+     3004:          "execute device fail !";
+     3005:          "set parameter fail !";
+     3006:          "erase fail !";
+     3007:          "write page fail !";
+     3008:          "get Response fail !";
+     3009:          "Check GPT is match fail !";
+     3010:          "read flash ID fail !"; 
+
+     3015:          "Open device fail !";   
+     3016:          "Inquiry fail !";   
+     3017:          "Current Map check fail !";
+     3018:          "Erase fail !";     
+     3019:          "Write fail !";     
+     3020:          "Read fail !";      
+     3021:          "Read - 2 fail !";  
+     3022:          "Write - 2 fail !"; 
+     3023:          "Write - 3 fail !"; 
+     3024:          "Check NAND Ready fail !";
+     3025:          "Update Real Block fail !";
+ 
+    
+     3030:          "PHY block Write fail !";
+     3031:          "PHY block Write - 2 fail !";
+     3032:          "PHY block Read fail !";    
+     3033:          "PHY block compare fail !";
+     3034:          "PHY block read file fail !";
+     3035:          "PHY block not found good block !";
+
+
+    //
+    //Power control test , error code list
+    //
+    3040:          "_POWERCONTROL_SUCCESSS_";
+    3041:          "Power control event wait time fail !";
+    3042:          "Power control event wait fail !";
+    3043:          "Power control port over detect !";
+    3044:          "Power control port usb disconnect !";
+    3045:          "Power control check pointer fail !";
+    3046:          "Power control check port fail !";
+    3047:          "Power control check pointer 2 fail !";
+    3048:          "Power control ACK Time out !";  
+    3049:          "Power control Stop test !";
+
+    //
+    //QC
+    //
+    4001:"Parameter Check Fail";
+
+    4011:"inquiry fail";
+    4012:"TERMINATE CMD Fail!";
+
+    4028:"Get Disk letter Fail";
+    4030:"Get used size Fail";
+    4031:"Get Lable Name Fail";
+
+    4032:"SCSI Product CMD Fail!";
+
+    4033:"Copy File Fail";
+    4034:"Verify File Fail";
+    4035:"Delete File Fail";
+
+    4038:"Read FW Version Fail";
+
+    4048:"Format Fail";
+    4049:"Format Verify Fail";
+
+    4058:"RomCode Mode !";
+
+    4060:"Compare U3 Fail";
+
+    4064:"FW Protect Mode!";
+
+    4067:"Preload write device fail!";
+    4068:"Preload verify device fail!";
+
+    4070:"First Test Check file system Fail!";
+    4071:"First Check FAT32 Fail!";
+    4072:"First Test Read LBA Fail!";
+    4074:"First compare Used Size fail!";
+    4075:"First compare Free Size fail!";
+
+    4077:"Traning Fail!";
+
+    4084:"Get Product fail!";
+    4085:"Get Manufacturer fail!";
+    4086:"Get SerialNumber fail!"
+
+
+    4100:"Compare vid error!";
+    4101:"Compare pid error!";
+    4102:"Compare manufacturer error!"
+    4103:"Compare product error!";
+    4104:"Compare storage id error!";
+    4105:"Compare inquiry id error!"
+    4106:"Compare serial number error!";
+    4107:"Compare lable name error!";
+    4108:"Compare free size error!"
+    4109:"Compare used size error!";
+    4110:"Compare total size error!";
+
+
+    4200:"Read usb speed fail!";
+
+
+    4300:"Get Inquiry ID Fail!";
+    4301:"First compare total size Fail!";
+    4302:"Open Disk Fail!";
+    4303:"Open Path Fail!";
+    4304:"Get Free size Fail!";
