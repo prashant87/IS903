@@ -139,13 +139,13 @@ IO=4,X,X,2,4,6,X
 
 [SettingFile]
 SettingFileName=
-SettingFileName_IS903=C:\Users\xiaohui\Desktop\InnostorMPTool(jb51.net)\SETTING_FILE_IS903\Innostor-Setup.ini
+SettingFileName_IS903=C:\Users\xiaohui\Desktop\IS903\量产工具\InnostorMPTool\SETTING_FILE_IS903\Innostor-Setup.ini
 
 [Count]
-PassCnt=6
+PassCnt=9
 FailCnt=11
-TotalCnt=17
-YieldRate=35
+TotalCnt=20
+YieldRate=45
 
 [Port_Flag]
 Port0=0
